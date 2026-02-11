@@ -5,6 +5,7 @@ import com.naehas.repository.StudentRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -35,9 +36,9 @@ public class StudentService {
         return savedStudent;
     }
 
-    public List<Student> getAllStudents() {
-        logger.debug("Fetching all students");
-        List<Student> students = studentRepository.findAll();
+    public List<Student> getAllStudents(Sort sort) {
+        logger.debug("Fetching all students with sorting");
+        List<Student> students = sort != null ? studentRepository.findAll(sort) : studentRepository.findAll();
         logger.info("Retrieved {} students", students.size());
         return students;
     }
