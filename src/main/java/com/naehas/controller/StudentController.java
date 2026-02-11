@@ -21,6 +21,7 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
+    // sort is the query parameter, extracts sort from URL.
     @GetMapping
     public ResponseEntity<List<Student>> getAllStudents(Sort sort) {
         logger.info("GET /api/students - Fetching all students with sorting");
