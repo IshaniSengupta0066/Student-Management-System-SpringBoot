@@ -2,6 +2,7 @@ package com.naehas.controller;
 
 import com.naehas.model.Student;
 import com.naehas.service.StudentService;
+import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,7 +44,7 @@ public class StudentController {
     }
 
     @PostMapping
-    public ResponseEntity<Student> createStudent(@RequestBody Student student) {
+    public ResponseEntity<Student> createStudent(@Valid @RequestBody Student student) {
         logger.info("POST /api/students - Creating student: {}", student.getName());
         Student savedStudent = studentService.saveStudent(student);
         logger.info("POST /api/students - Student created with ID: {}", savedStudent.getRollNo());
@@ -52,7 +53,7 @@ public class StudentController {
 
     @PutMapping("/{id}")
     // id is the path variable , extracts id from URL.
-    public ResponseEntity<Student> updateStudent(@PathVariable("id") int id, @RequestBody Student student) {
+    public ResponseEntity<Student> updateStudent(@PathVariable("id") int id, @Valid @RequestBody Student student) {
         logger.info("PUT /api/students/{} - Updating student", id);
         Student updatedStudent = studentService.updateStudent(id, student);
         if (updatedStudent == null) {
