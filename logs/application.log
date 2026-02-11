@@ -402,3 +402,345 @@ org.springframework.data.mapping.PropertyReferenceException: No property 'age ' 
 2026-02-11 12:32:53 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-02-11 12:32:53 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-02-11 12:32:53 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-11 12:42:00 [main] INFO  com.naehas.StudentApplication - Starting StudentApplication using Java 21.0.9 with PID 61711 (/Users/ishanisengupta/Desktop/Spring-Student-Management/target/classes started by ishanisengupta in /Users/ishanisengupta/Desktop/Spring-Student-Management)
+2026-02-11 12:42:00 [main] DEBUG com.naehas.StudentApplication - Running with Spring Boot v3.2.1, Spring v6.1.5
+2026-02-11 12:42:00 [main] INFO  com.naehas.StudentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 12:42:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 12:42:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2026-02-11 12:42:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-11 12:42:01 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 12:42:01 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-11 12:42:01 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 12:42:01 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 397 ms
+2026-02-11 12:42:01 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 12:42:01 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.9.Final
+2026-02-11 12:42:01 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 12:42:01 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 12:42:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-11 12:42:01 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c678c7b
+2026-02-11 12:42:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-11 12:42:01 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 12:42:01 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 12:42:01 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 12:42:01 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 12:42:01 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 12:42:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-11 12:42:01 [main] INFO  com.naehas.StudentApplication - Started StudentApplication in 1.308 seconds (process running for 1.44)
+2026-02-11 12:42:03 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-11 12:42:03 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-11 12:42:03 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-02-11 12:42:03 [http-nio-8080-exec-1] INFO  c.n.controller.StudentController - POST /api/students - Creating student: Natalia
+2026-02-11 12:42:03 [http-nio-8080-exec-1] DEBUG com.naehas.service.StudentService - Saving student: Natalia
+2026-02-11 12:42:03 [http-nio-8080-exec-1] INFO  com.naehas.service.StudentService - Student saved with ID: 7
+2026-02-11 12:42:03 [http-nio-8080-exec-1] INFO  c.n.controller.StudentController - POST /api/students - Student created with ID: 7
+2026-02-11 12:42:20 [http-nio-8080-exec-3] INFO  c.n.controller.StudentController - POST /api/students - Creating student: Jonathon
+2026-02-11 12:42:20 [http-nio-8080-exec-3] DEBUG com.naehas.service.StudentService - Saving student: Jonathon
+2026-02-11 12:42:20 [http-nio-8080-exec-3] INFO  com.naehas.service.StudentService - Student saved with ID: 8
+2026-02-11 12:42:20 [http-nio-8080-exec-3] INFO  c.n.controller.StudentController - POST /api/students - Student created with ID: 8
+2026-02-11 12:42:29 [http-nio-8080-exec-4] INFO  c.n.controller.StudentController - POST /api/students - Creating student: Steve
+2026-02-11 12:42:29 [http-nio-8080-exec-4] DEBUG com.naehas.service.StudentService - Saving student: Steve
+2026-02-11 12:42:29 [http-nio-8080-exec-4] INFO  com.naehas.service.StudentService - Student saved with ID: 9
+2026-02-11 12:42:29 [http-nio-8080-exec-4] INFO  c.n.controller.StudentController - POST /api/students - Student created with ID: 9
+2026-02-11 12:42:38 [http-nio-8080-exec-5] INFO  c.n.controller.StudentController - POST /api/students - Creating student: Nancy
+2026-02-11 12:42:38 [http-nio-8080-exec-5] DEBUG com.naehas.service.StudentService - Saving student: Nancy
+2026-02-11 12:42:38 [http-nio-8080-exec-5] INFO  com.naehas.service.StudentService - Student saved with ID: 10
+2026-02-11 12:42:38 [http-nio-8080-exec-5] INFO  c.n.controller.StudentController - POST /api/students - Student created with ID: 10
+2026-02-11 12:42:50 [http-nio-8080-exec-6] INFO  c.n.controller.StudentController - POST /api/students - Creating student: Katy
+2026-02-11 12:42:50 [http-nio-8080-exec-6] DEBUG com.naehas.service.StudentService - Saving student: Katy
+2026-02-11 12:42:50 [http-nio-8080-exec-6] INFO  com.naehas.service.StudentService - Student saved with ID: 11
+2026-02-11 12:42:50 [http-nio-8080-exec-6] INFO  c.n.controller.StudentController - POST /api/students - Student created with ID: 11
+2026-02-11 12:43:01 [http-nio-8080-exec-7] INFO  c.n.controller.StudentController - POST /api/students - Creating student: Bill
+2026-02-11 12:43:01 [http-nio-8080-exec-7] DEBUG com.naehas.service.StudentService - Saving student: Bill
+2026-02-11 12:43:01 [http-nio-8080-exec-7] INFO  com.naehas.service.StudentService - Student saved with ID: 12
+2026-02-11 12:43:01 [http-nio-8080-exec-7] INFO  c.n.controller.StudentController - POST /api/students - Student created with ID: 12
+2026-02-11 12:43:07 [http-nio-8080-exec-8] INFO  c.n.controller.StudentController - GET /api/students - Fetching all students with sorting
+2026-02-11 12:43:07 [http-nio-8080-exec-8] DEBUG com.naehas.service.StudentService - Fetching all students with sorting
+2026-02-11 12:43:07 [http-nio-8080-exec-8] INFO  com.naehas.service.StudentService - Retrieved 11 students
+2026-02-11 12:43:07 [http-nio-8080-exec-8] INFO  c.n.controller.StudentController - GET /api/students - Found 11 students
+2026-02-11 12:43:28 [http-nio-8080-exec-9] INFO  c.n.controller.StudentController - POST /api/students - Creating student: Billy
+2026-02-11 12:43:28 [http-nio-8080-exec-9] DEBUG com.naehas.service.StudentService - Saving student: Billy
+2026-02-11 12:43:28 [http-nio-8080-exec-9] INFO  com.naehas.service.StudentService - Student saved with ID: 13
+2026-02-11 12:43:28 [http-nio-8080-exec-9] INFO  c.n.controller.StudentController - POST /api/students - Student created with ID: 13
+2026-02-11 12:43:40 [http-nio-8080-exec-10] INFO  c.n.controller.StudentController - POST /api/students - Creating student: Will
+2026-02-11 12:43:40 [http-nio-8080-exec-10] DEBUG com.naehas.service.StudentService - Saving student: Will
+2026-02-11 12:43:40 [http-nio-8080-exec-10] INFO  com.naehas.service.StudentService - Student saved with ID: 14
+2026-02-11 12:43:40 [http-nio-8080-exec-10] INFO  c.n.controller.StudentController - POST /api/students - Student created with ID: 14
+2026-02-11 12:43:45 [http-nio-8080-exec-2] INFO  c.n.controller.StudentController - GET /api/students - Fetching all students with sorting
+2026-02-11 12:43:45 [http-nio-8080-exec-2] DEBUG com.naehas.service.StudentService - Fetching all students with sorting
+2026-02-11 12:43:45 [http-nio-8080-exec-2] INFO  com.naehas.service.StudentService - Retrieved 13 students
+2026-02-11 12:43:45 [http-nio-8080-exec-2] INFO  c.n.controller.StudentController - GET /api/students - Found 13 students
+2026-02-11 12:46:33 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 12:46:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-11 12:46:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-11 12:49:15 [main] INFO  com.naehas.StudentApplication - Starting StudentApplication using Java 21.0.9 with PID 65519 (/Users/ishanisengupta/Desktop/Spring-Student-Management/target/classes started by ishanisengupta in /Users/ishanisengupta/Desktop/Spring-Student-Management)
+2026-02-11 12:49:15 [main] DEBUG com.naehas.StudentApplication - Running with Spring Boot v3.2.1, Spring v6.1.5
+2026-02-11 12:49:15 [main] INFO  com.naehas.StudentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 12:49:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 12:49:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2026-02-11 12:49:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-11 12:49:16 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 12:49:16 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-11 12:49:16 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 12:49:16 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 416 ms
+2026-02-11 12:49:16 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 12:49:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.9.Final
+2026-02-11 12:49:16 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 12:49:16 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 12:49:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-11 12:49:16 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c678c7b
+2026-02-11 12:49:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-11 12:49:16 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 12:49:16 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 12:49:16 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 12:49:16 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 12:49:16 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 12:49:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-11 12:49:17 [main] INFO  com.naehas.StudentApplication - Started StudentApplication in 1.325 seconds (process running for 1.458)
+2026-02-11 12:49:20 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-11 12:49:20 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-11 12:49:20 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-02-11 12:49:20 [http-nio-8080-exec-1] ERROR c.n.c.GlobalExceptionHandler - IllegalArgumentException: Name for argument of type [int] not specified, and parameter name information not available via reflection. Ensure that the compiler uses the '-parameters' flag.
+2026-02-11 12:49:49 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 12:49:49 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-11 12:49:49 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-11 12:50:53 [main] INFO  com.naehas.StudentApplication - Starting StudentApplication using Java 21.0.9 with PID 66107 (/Users/ishanisengupta/Desktop/Spring-Student-Management/target/classes started by ishanisengupta in /Users/ishanisengupta/Desktop/Spring-Student-Management)
+2026-02-11 12:50:53 [main] DEBUG com.naehas.StudentApplication - Running with Spring Boot v3.2.1, Spring v6.1.5
+2026-02-11 12:50:53 [main] INFO  com.naehas.StudentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 12:50:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 12:50:53 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2026-02-11 12:50:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-11 12:50:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 12:50:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-11 12:50:53 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 12:50:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 416 ms
+2026-02-11 12:50:53 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 12:50:53 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.9.Final
+2026-02-11 12:50:53 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 12:50:53 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 12:50:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-11 12:50:53 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@59a2d756
+2026-02-11 12:50:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-11 12:50:53 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 12:50:53 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 12:50:54 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 12:50:54 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 12:50:54 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 12:50:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-11 12:50:54 [main] INFO  com.naehas.StudentApplication - Started StudentApplication in 1.316 seconds (process running for 1.445)
+2026-02-11 12:51:00 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-11 12:51:00 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-11 12:51:00 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-02-11 12:51:00 [http-nio-8080-exec-1] ERROR c.n.c.GlobalExceptionHandler - IllegalArgumentException: Name for argument of type [int] not specified, and parameter name information not available via reflection. Ensure that the compiler uses the '-parameters' flag.
+2026-02-11 12:51:01 [http-nio-8080-exec-3] ERROR c.n.c.GlobalExceptionHandler - IllegalArgumentException: Name for argument of type [int] not specified, and parameter name information not available via reflection. Ensure that the compiler uses the '-parameters' flag.
+2026-02-11 12:51:39 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 12:51:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-11 12:51:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-11 12:51:47 [main] INFO  com.naehas.StudentApplication - Starting StudentApplication using Java 21.0.9 with PID 66661 (/Users/ishanisengupta/Desktop/Spring-Student-Management/target/classes started by ishanisengupta in /Users/ishanisengupta/Desktop/Spring-Student-Management)
+2026-02-11 12:51:47 [main] DEBUG com.naehas.StudentApplication - Running with Spring Boot v3.2.1, Spring v6.1.5
+2026-02-11 12:51:47 [main] INFO  com.naehas.StudentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 12:51:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 12:51:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+2026-02-11 12:51:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-11 12:51:47 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 12:51:47 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-11 12:51:47 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 12:51:47 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 401 ms
+2026-02-11 12:51:47 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 12:51:47 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.9.Final
+2026-02-11 12:51:47 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 12:51:47 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 12:51:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-11 12:51:47 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c839677
+2026-02-11 12:51:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-11 12:51:47 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 12:51:47 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 12:51:48 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 12:51:48 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 12:51:48 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 12:51:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-11 12:51:48 [main] INFO  com.naehas.StudentApplication - Started StudentApplication in 1.324 seconds (process running for 1.446)
+2026-02-11 12:51:52 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-11 12:51:52 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-11 12:51:52 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-02-11 12:51:52 [http-nio-8080-exec-1] INFO  c.n.controller.StudentController - GET /api/students - Page: 0, Size: 10
+2026-02-11 12:51:52 [http-nio-8080-exec-1] DEBUG com.naehas.service.StudentService - Fetching students - Page: 0, Size: 10
+2026-02-11 12:51:52 [http-nio-8080-exec-1] INFO  com.naehas.service.StudentService - Retrieved 10 students from page 0 of 2
+2026-02-11 12:51:52 [http-nio-8080-exec-1] INFO  c.n.controller.StudentController - GET /api/students - Found 13 students
+2026-02-11 12:52:26 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 12:52:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-11 12:52:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-11 12:52:34 [main] INFO  com.naehas.StudentApplication - Starting StudentApplication using Java 21.0.9 with PID 67176 (/Users/ishanisengupta/Desktop/Spring-Student-Management/target/classes started by ishanisengupta in /Users/ishanisengupta/Desktop/Spring-Student-Management)
+2026-02-11 12:52:34 [main] DEBUG com.naehas.StudentApplication - Running with Spring Boot v3.2.1, Spring v6.1.5
+2026-02-11 12:52:34 [main] INFO  com.naehas.StudentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 12:52:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 12:52:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
+2026-02-11 12:52:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-11 12:52:34 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 12:52:34 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-11 12:52:34 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 12:52:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 410 ms
+2026-02-11 12:52:34 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 12:52:34 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.9.Final
+2026-02-11 12:52:34 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 12:52:35 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 12:52:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-11 12:52:35 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@243c4346
+2026-02-11 12:52:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-11 12:52:35 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 12:52:35 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 12:52:35 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 12:52:35 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 12:52:35 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 12:52:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-11 12:52:35 [main] INFO  com.naehas.StudentApplication - Started StudentApplication in 1.326 seconds (process running for 1.455)
+2026-02-11 12:52:59 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 12:52:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-11 12:52:59 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-11 12:53:07 [main] INFO  com.naehas.StudentApplication - Starting StudentApplication using Java 21.0.9 with PID 68090 (/Users/ishanisengupta/Desktop/Spring-Student-Management/target/classes started by ishanisengupta in /Users/ishanisengupta/Desktop/Spring-Student-Management)
+2026-02-11 12:53:07 [main] DEBUG com.naehas.StudentApplication - Running with Spring Boot v3.2.1, Spring v6.1.5
+2026-02-11 12:53:07 [main] INFO  com.naehas.StudentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 12:53:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 12:53:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2026-02-11 12:53:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-11 12:53:07 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 12:53:07 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-11 12:53:07 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 12:53:07 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 398 ms
+2026-02-11 12:53:07 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 12:53:07 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.9.Final
+2026-02-11 12:53:07 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 12:53:07 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 12:53:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-11 12:53:07 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@485deee1
+2026-02-11 12:53:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-11 12:53:08 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 12:53:08 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 12:53:08 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 12:53:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 12:53:08 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 12:53:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-11 12:53:08 [main] INFO  com.naehas.StudentApplication - Started StudentApplication in 1.369 seconds (process running for 1.499)
+2026-02-11 12:53:24 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 12:53:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-11 12:53:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-11 13:24:51 [main] INFO  com.naehas.StudentApplication - Starting StudentApplication using Java 21.0.9 with PID 69072 (/Users/ishanisengupta/Desktop/Spring-Student-Management/target/classes started by ishanisengupta in /Users/ishanisengupta/Desktop/Spring-Student-Management)
+2026-02-11 13:24:51 [main] DEBUG com.naehas.StudentApplication - Running with Spring Boot v3.2.1, Spring v6.1.5
+2026-02-11 13:24:51 [main] INFO  com.naehas.StudentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 13:24:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 13:24:52 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+2026-02-11 13:24:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-11 13:24:52 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 13:24:52 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-11 13:24:52 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 13:24:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 425 ms
+2026-02-11 13:24:52 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 13:24:52 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.9.Final
+2026-02-11 13:24:52 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 13:24:52 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 13:24:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-11 13:24:52 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7afb9c93
+2026-02-11 13:24:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-11 13:24:52 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 13:24:52 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 13:24:52 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 13:24:52 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 13:24:52 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 13:24:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-11 13:24:52 [main] INFO  com.naehas.StudentApplication - Started StudentApplication in 1.346 seconds (process running for 1.476)
+2026-02-11 13:25:21 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 13:25:21 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-11 13:25:21 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-11 13:26:10 [main] INFO  com.naehas.StudentApplication - Starting StudentApplication using Java 21.0.9 with PID 69579 (/Users/ishanisengupta/Desktop/Spring-Student-Management/target/classes started by ishanisengupta in /Users/ishanisengupta/Desktop/Spring-Student-Management)
+2026-02-11 13:26:10 [main] DEBUG com.naehas.StudentApplication - Running with Spring Boot v3.2.1, Spring v6.1.5
+2026-02-11 13:26:10 [main] INFO  com.naehas.StudentApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-11 13:26:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-11 13:26:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2026-02-11 13:26:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-11 13:26:10 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-11 13:26:10 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-11 13:26:10 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-11 13:26:10 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 390 ms
+2026-02-11 13:26:10 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-11 13:26:10 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.9.Final
+2026-02-11 13:26:10 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-11 13:26:10 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-11 13:26:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-11 13:26:10 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30c7be6f
+2026-02-11 13:26:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-11 13:26:10 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-11 13:26:10 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-11 13:26:11 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-11 13:26:11 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 13:26:11 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-11 13:26:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-02-11 13:26:11 [main] INFO  com.naehas.StudentApplication - Started StudentApplication in 1.269 seconds (process running for 1.405)
+2026-02-11 13:26:12 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-11 13:26:12 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-11 13:26:12 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-02-11 13:26:12 [http-nio-8080-exec-1] INFO  c.n.controller.StudentController - GET /api/students - Page: 0, Size: 10
+2026-02-11 13:26:12 [http-nio-8080-exec-1] DEBUG com.naehas.service.StudentService - Fetching students - Page: 0, Size: 10
+2026-02-11 13:26:12 [http-nio-8080-exec-1] INFO  com.naehas.service.StudentService - Retrieved 10 students from page 0 of 2
+2026-02-11 13:26:12 [http-nio-8080-exec-1] INFO  c.n.controller.StudentController - GET /api/students - Found 13 students
+2026-02-11 13:27:12 [http-nio-8080-exec-5] INFO  c.n.controller.StudentController - GET /api/students - Page: 1, Size: 10
+2026-02-11 13:27:12 [http-nio-8080-exec-5] DEBUG com.naehas.service.StudentService - Fetching students - Page: 1, Size: 10
+2026-02-11 13:27:12 [http-nio-8080-exec-5] INFO  com.naehas.service.StudentService - Retrieved 3 students from page 1 of 2
+2026-02-11 13:27:12 [http-nio-8080-exec-5] INFO  c.n.controller.StudentController - GET /api/students - Found 13 students
+2026-02-11 13:27:34 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-11 13:27:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-11 13:27:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

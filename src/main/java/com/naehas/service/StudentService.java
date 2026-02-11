@@ -5,10 +5,11 @@ import com.naehas.repository.StudentRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -36,10 +37,17 @@ public class StudentService {
         return savedStudent;
     }
 
-    public List<Student> getAllStudents(Sort sort) {
-        logger.debug("Fetching all students with sorting");
-        List<Student> students = sort != null ? studentRepository.findAll(sort) : studentRepository.findAll();
-        logger.info("Retrieved {} students", students.size());
+    public Page<Student> getAllStudents(int page, int size) {
+        logger.debug("Fetching students - Page: {}, Size: {}", page, size);
+        
+        // Create Pageable object with page number and size
+        Pageable pageable = PageRequest.of(page, size);
+        
+        // Get paginated results
+        Page<Student> students = studentRepository.findAll(pageable);
+        
+        logger.info("Retrieved {} students from page {} of {}", 
+            students.getNumberOfElements(), page, students.getTotalPages());
         return students;
     }
 

@@ -5,12 +5,10 @@ import com.naehas.service.StudentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/students")
@@ -21,12 +19,14 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
-    // sort is the query parameter, extracts sort from URL.
     @GetMapping
-    public ResponseEntity<List<Student>> getAllStudents(Sort sort) {
-        logger.info("GET /api/students - Fetching all students with sorting");
-        List<Student> students = studentService.getAllStudents(sort);
-        logger.info("GET /api/students - Found {} students", students.size());
+    public ResponseEntity<Page<Student>> getAllStudents(
+            @RequestParam(value = "page", defaultValue = "0") int page,
+            @RequestParam(value = "size", defaultValue = "10") int size
+    ) {
+        logger.info("GET /api/students - Page: {}, Size: {}", page, size);
+        Page<Student> students = studentService.getAllStudents(page, size);
+        logger.info("GET /api/students - Found {} students", students.getTotalElements());
         return ResponseEntity.ok(students);
     }
 
